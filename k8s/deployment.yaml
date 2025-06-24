@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlops-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: mlops-app}
+  template:
+    metadata: {labels: {app: mlops-app}}
+    spec:
+      containers:
+        - name: flask
+          image: gcr.io/rshop-85731/mlops-gke-app:latest
+          ports: [{containerPort: 5000}]
