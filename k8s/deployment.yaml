@@ -11,5 +11,5 @@ spec:
     spec:
       containers:
         - name: flask
-          image: gcr.io/rshop-85731/mlops-gke-app:latest
+          image: gcr.io/weli-73239/mlops-gke-app:latest
           ports: [{containerPort: 5000}]
