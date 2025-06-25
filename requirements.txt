@@ -1,3 +1,4 @@
+mlflow==2.12.1
 pandas
 flask
 scikit-learn

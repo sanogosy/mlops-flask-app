@@ -1,0 +1,4 @@
+[core]
+    remote = url
+['remote "url"']
+    url = https://github.com/sanogosy/mlops-flask-app

@@ -7,7 +7,7 @@ from prometheus_flask_exporter import PrometheusMetrics
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
 model = joblib.load("model.pkl")
-df = pd.read_csv('housing.csv', header=None, sep='\s+')
+df = pd.read_csv('./data/housing.csv', header=None, sep='\s+')
 
 @app.route("/predict", methods=["POST"])
 def predict():
